@@ -15,6 +15,7 @@ void examen()
 	initscr();
 	registro n;
 	erase();
+	int validaNoRepetidos[10];
 	if (has_colors()) {
 		cargarColores();
 		bkgd(COLOR_PAIR(1));
@@ -51,8 +52,22 @@ void examen()
 			char respuesta[1];
 			char res;
 			int nPosicion = 17;
+			int nBandera = 0;
+			int nPregunta = 1+rand()%(26);
+			while(nBandera == 0 && x > 0){
+				nBandera = 1;
+				//esta seccion es para validar si ya se utilizo las preguntas anteriores
+				for(int y=0;y<x;y++){
+					if(nPregunta == validaNoRepetidos[y]){
+						nBandera = 0;
+						nPregunta = 1+rand()%(26);
+						break;
+					}
+				}
+			}
 			imprimirTitulo();
-			switch(1+rand()%(26)){
+			validaNoRepetidos[x] = nPregunta;
+			switch(nPregunta){
 				case 1:
 					strcpy(respuesta, pregunta1());
 				break;
@@ -140,8 +155,6 @@ void examen()
 				break;
 			}
 			mvprintw(nPosicion,47,"Escoja su opcion:");
-			mvprintw(nPosicion+1,47,"%d",calificacion);
-			mvprintw(nPosicion+2,47,"%s",respuesta);
 			scanw("%c",&res);
 			if(res==respuesta[0]){
 				calificacion++;

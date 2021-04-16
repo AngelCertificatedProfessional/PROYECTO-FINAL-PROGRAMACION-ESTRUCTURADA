@@ -1,55 +1,55 @@
 #include <ncurses.h>
 #include <stdio.h>
 
-char*  pregunta1(){
+char* pregunta1(){
     mvprintw(15,47,"Cual es la libreria para poder usar las funciones printf y scanf?");
     mvprintw(16,47,"a) ncurses.h        b)string.h              c)stdio.h                   d)math.h");
     return "c";
 }
 
-char*  pregunta2(){
+char* pregunta2(){
     mvprintw(15,47,"En diagramas de flujo, el programa empieza y termina con la figura de:");
     mvprintw(16,47,"a) Ovalo b)rectangulo c)cuadrado d)rombo");
     return "a";
 }
 
-char*  pregunta3(){
+char* pregunta3(){
     mvprintw(15,47,"Es la funcion que une dos cadenas de caracteres");
     mvprintw(16,47,"a)strlen b)strcpy c)strcat d)strcmp");
     return "c";
 }
 
-char*  pregunta4(){
+char* pregunta4(){
     mvprintw(15,47,"Cual de estos ciclos for esta bien escrito");
     mvprintw(16,47,"a)for(x=0,x<5;x++) b) for(x=0.x<6.x++) c) for(x=0;x<5;x++) d)for(x=0;x<7;x++); ");
     return "c";
 }
 
-char*  pregunta5(){
+char* pregunta5(){
     mvprintw(15,47,"Cual de estas comparaciones esta mal escrita");
     mvprintw(16,47,"a)if(opc==0) b)if(opc!=0); c)if(opc<=0) d)if(opc<0)");
     return "b";
 }
 
-char*  pregunta6(){
+char* pregunta6(){
     mvprintw(15,47,"Cual de estas comparaciones esta mal escrita");
     mvprintw(16,47,"a)if(opc==0) b)if(opc!=0); c)if(opc<=0) d)if(opc<0)");
     return "b";
 }
 
-char*  pregunta7(){
+char* pregunta7(){
     mvprintw(15,47,"Cual de estos for esta mal escrito");
     mvprintw(16,47,"a)for(y=0;y<5;y++) b) for(y=0;y<*p;y++) c)for(y=0;y=<7;y++) d)for(y=0;y<=n;y++)");
     return "c";
 }
 
-char*  pregunta8(){
+char* pregunta8(){
     mvprintw(15,47,"Cual es la funcion que  aplica operaciones selectivas");
     mvprintw(16,47,"a)for b)do,while c)switch d)strcmp");
     return "c";
 }
 
-char*  pregunta9(){
+char* pregunta9(){
     mvprintw(15,47,"En que linea se encuentra el error de este programa:");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:main()");
@@ -75,12 +75,12 @@ char*  pregunta9(){
     return "d";
 }
 
-char*  pregunta10(){
+char* pregunta10(){
     mvprintw(15,7,"En un programa se pide registrar a 15 alumnos y su calificacion, al final se mostrara el alumno con mejor calificacion, en que linea se encuentra el error en esta pagina");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:#include<string.h>");
     mvprintw(18,47,"3:main() {");
-    mvprintw(19,47,"4:char*  nombre[20],nombrem[20];");
+    mvprintw(19,47,"4:char nombre[20],nombrem[20];");
     mvprintw(20,47,"5:int z,ca,caf=0;");
     mvprintw(21,47,"6:for(z=0;z>15;z++)");
     mvprintw(22,47,"7:{");
@@ -97,12 +97,12 @@ char*  pregunta10(){
     return "b";
 }
 
-char*  pregunta11(){
+char* pregunta11(){
     mvprintw(15,47,"En que linea se encuentra el error de este programa:");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:main()");
     mvprintw(18,47,"3:{"); 
-    mvprintw(19,47,"4:char*  nombre[20];");
+    mvprintw(19,47,"4:char nombre[20];");
     mvprintw(20,47,"5:printf(\"Escriba su nombre\");");
     mvprintw(21,47,"6:scanf(\"%%d\",nombre);");
     mvprintw(22,47,"7: }");
@@ -110,55 +110,55 @@ char*  pregunta11(){
     return "d";
 }
 
-char*  pregunta12(){
-    mvprintw(15,12,"es la representacion grafica de un algoritmo o proceso. Se utiliza en disciplinas como programacion,economia,procesos industriales");
+char* pregunta12(){
+    mvprintw(15,12,"Es la representacion grafica de un algoritmo o proceso. Se utiliza en disciplinas como programacion,economia,procesos industriales");
     mvprintw(16,47,"a)algoritmo b)vector c)matriz d)diagrama de flujo");
     return "d";
 }
 
-char*  pregunta13(){
+char* pregunta13(){
     mvprintw(15,47,"Cual de estos ciclos es controlado por un contador");
     mvprintw(16,47,"a)if b)for c)do, while d) while");
     return "b";
 }
 
-char*  pregunta14(){    
+char* pregunta14(){    
     mvprintw(15,47,"Cual de estos printf esta bien escrito");
     mvprintw(16,47,"a)printf(\"%%d\",num) b)printf(\"%%d\",&num) c)printf(%%d,num) d)printf(\"%%d\",num);");
     return "d";
 }
 
-char*  pregunta15(){
+char* pregunta15(){
     mvprintw(15,47,"Quien diseno el lenguaje en c?");
     mvprintw(16,47,"a)Dennis Ritchie b)Steve Jobs c)Ken Thompson d)Douglas Mclroy");
     return "a";
 }
 
-char*  pregunta16(){
+char* pregunta16(){
     mvprintw(15,4,"Es la representacion grafica del algoritmo o proceso.Se utiliza en disciplinas como programacion,economia, procesos industriales y psicologia cognitiva.");
     mvprintw(16,47,"a)algoritmo b)vector c)matriz d)diagrama de flujo");
     return "d";
 }
 
-char*  pregunta17(){
+char* pregunta17(){
     mvprintw(15,47,"En diagramas de flujo,el programa hace un proceso con la figura");
     mvprintw(16,47,"a) Ovalo b)rectangulo c)rombo d)cuadrado");
     return "b";
 }
 
-char*  pregunta18(){
+char* pregunta18(){
     mvprintw(15,47,"Es la funcion de asignacion de un dato");
     mvprintw(16,47,"a)strlen b)strcpy c)strcat d)strcmp");
     return "b";
 }
 
-char*  pregunta19(){
+char* pregunta19(){
     mvprintw(15,47,"Es la funcion que compara cadenas de caracteres");
     mvprintw(16,47,"a)strlen b)strcpy c)strcat d)strcmp");
     return "d";
 }
 
-char*  pregunta20(){
+char* pregunta20(){
     mvprintw(15,47,"En que linea se encuentra el error de este programa:");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:main()");
@@ -173,13 +173,13 @@ char*  pregunta20(){
     return "a";
 }
 
-char*  pregunta21(){
-    mvprintw(15,47,"9)Cual de estos printf esta mal escrito");
+char* pregunta21(){
+    mvprintw(15,47,"Cual de estos printf esta mal escrito");
     mvprintw(16,47,"a)printf(\"%%s\",nom); b)Printf (\"%%d\",num); c)printf(\"%%f\",precio); d)printf(\"%%i\",oso);");
     return "b";
 }
 
-char*  pregunta22(){
+char* pregunta22(){
     mvprintw(15,12,"El siguiente programa muestra un juego de acertacion de un numero, pero en alguna linea se encuentra un  error, puede saber cual es?");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:main()");
@@ -197,7 +197,7 @@ char*  pregunta22(){
     return "c";
 }
 
-char*  pregunta23(){
+char* pregunta23(){
     mvprintw(15,47,"En este programa pide un numero aleatorio por 15 veces seguidas, donde se encuentra el error");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:main()");
@@ -212,12 +212,12 @@ char*  pregunta23(){
     return "c";
 }
 
-char*  pregunta24(){
-    mvprintw(15,47,"13)en el siguiente programa se requiere que pida 15 nombres , se mostrara cuantas veces se repetira el nombre Liliana");
+char* pregunta24(){
+    mvprintw(15,47,"En el siguiente programa se requiere que pida 15 nombres , se mostrara cuantas veces se repetira el nombre Liliana");
     mvprintw(16,47,"1:#include<stdio.h>");
     mvprintw(17,47,"2:#include<string.h>");
     mvprintw(18,47,"3:main (){");
-    mvprintw(19,47,"4:char*  nombre[20];");
+    mvprintw(19,47,"4:char nombre[20];");
     mvprintw(20,47,"5:int y=0,l;");
     mvprintw(21,47,"6:for(l=0;l<15;l++) {");
     mvprintw(22,47,"7:printf(\"escriba su nombre:\");");
@@ -230,13 +230,13 @@ char*  pregunta24(){
     return "b";
 }
 
-char*  pregunta25(){
-    mvprintw(15,5,"14)En el siguiente problema se utiliza un if para saber si la siguiente estructura de caracteres dice ana, cual de estos, if esta bien escrito");
+char* pregunta25(){
+    mvprintw(15,5,"En el siguiente problema se utiliza un if para saber si la siguiente estructura de caracteres dice ana, cual de estos, if esta bien escrito");
     mvprintw(16,14,"a)if(strcmp(nombre, \"ana\")>=0) b)if(strcmp(nombre, \"ana\")==0) c) if(strcmp(nombre,\"ana\")!=0) d)if(strcmp(nombre,\"ana\")!=0);");
     return "b";
 }
 
-char*  pregunta26(){
+char* pregunta26(){
     mvprintw(15,47,"Cual es la funcion para escanear datos?");
     mvprintw(16,47,"a)printf b)scanf c)clear d)return");
     return "b";
